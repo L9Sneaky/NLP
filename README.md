@@ -1,6 +1,6 @@
 # NLP
-abdullah Al-Huwaishel
-Ghanim Al-Ghanim
+### abdullah Al-Huwaishel
+### Ghanim Al-Ghanim
 
 # Fake and real news Classification Prediction
 The dataset that will be used for this project is from Kaggle by clement Bisaillon.
