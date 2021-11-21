@@ -1,5 +1,5 @@
 # NLP
-### abdullah Al-Huwaishel
+### Abdullah Al-Huwaishel
 ### Ghanim Al-Ghanim
 
 # Fake News Classification Prediction
