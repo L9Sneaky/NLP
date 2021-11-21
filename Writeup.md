@@ -67,7 +67,7 @@ We split into 55/45 train and test respectively. The training dataset has 20,253
 
 
 
-![ROC Curve](charts/Picture1.png)
+![ROC Curve](chart/Picture1.png)
 
 ### Tools
 
