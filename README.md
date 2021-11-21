@@ -9,3 +9,5 @@ The dataset contains an articles news, where it provides 3 features and 30,000+ 
   - Python
   - sklearn
   - seaborn 
+  - nltk
+  - matplotlib
