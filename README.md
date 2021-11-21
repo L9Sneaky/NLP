@@ -1,5 +1,5 @@
 # NLP
-### abdullah Al-Huwaishel
+### Abdullah Al-Huwaishel
 ### Ghanim Al-Ghanim
 
 # Fake News Classification Prediction
@@ -9,3 +9,5 @@ The dataset contains an articles news, where it provides 3 features and 30,000+ 
   - Python
   - sklearn
   - seaborn 
+  - nltk
+  - matplotlib
