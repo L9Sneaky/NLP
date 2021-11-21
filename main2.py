@@ -17,7 +17,7 @@ from sklearn.model_selection import cross_val_score
 from sklearn.model_selection import cross_val_predict
 from sklearn.metrics import plot_roc_curve
 from sklearn.decomposition import PCA
-from sklearn.decomposition import SparsePCA
+from sklearn.decomposition import SparsePCA1
 from collections import Counter
 from sklearn import preprocessing
 import re
@@ -29,6 +29,30 @@ import matplotlib.cm as cm
 %matplotlib inline
 import warnings
 warnings.filterwarnings("ignore")
+
+import numpy as np
+import pandas as pd
+import numpy as np
+import pandas as pd
+import seaborn as sns
+import matplotlib.pyplot as plt
+import nltk
+from sklearn.preprocessing import LabelBinarizer
+from nltk.corpus import stopwords
+from nltk.stem.porter import PorterStemmer
+from wordcloud import WordCloud,STOPWORDS
+from nltk.stem import WordNetLemmatizer
+from nltk.tokenize import word_tokenize,sent_tokenize
+from bs4 import BeautifulSoup
+import re,string,unicodedata
+from sklearn.metrics import classification_report,confusion_matrix,accuracy_score
+from sklearn.model_selection import train_test_split
+from string import punctuation
+from nltk import pos_tag
+from nltk.corpus import wordnet
+import warnings
+warnings.filterwarnings("ignore")
+
 #%%
 # %% codecell
 df1 = pd.read_csv('True.csv')
@@ -227,7 +251,7 @@ def processPost(text:str):
     text=text.lower()
     return text
 
-df=df.sample(frac=0.6, replace=True, random_state=1)
+df=df.sample(frac=0.9, replace=True, random_state=1)
 df["text"] = df["text"].apply(processPost)
 
 #%%
@@ -386,8 +410,8 @@ pd.concat([models_dataframe,results.transpose()],axis =1)
 #%%
 def predict_text(text:str):
     text = [processPost(text)]
-    text = cv1.transform(text)
-    print(target[lr_cv1.predict(text)[0]])
+    text = tfidf1.transform(text)
+    print(target[knn_tfidf1.predict(text)[0]])
 #%%
 predict_text('Trump hates obama')
 predict_text('Trump is poor')
