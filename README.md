@@ -1,5 +1,5 @@
 # NLP
-### [Abdullah Al-Huwaishel] (https://github.com/hush966)
+### [Abdullah Al-Huwaishel](https://github.com/hush966)
 ### Ghanim Al-Ghanim
 
 # Fake News Classification Prediction
